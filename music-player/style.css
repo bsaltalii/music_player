@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+    --color-first:#155263;
+    --color-second:#ffc93c; 
+}
+body{
+    box-sizing: border-box;
+    background: var(--color-first);
+    font-family: 'Poppins', sans-serif;
+}
+.button{
+    border: none;
+    padding: .5rem;
+    background-color:inherit;
+    border:2px solid var(--color-first);
+    color:  var(--color-first) ;
+    border-radius: .5rem;
+}
+.button:hover{
+    background-color: var(--color-first);
+    color: #fff;
+    transition: all .375s;
+}
+.card {
+    border: none;
+    border-radius: .5rem;
+    position: relative;
+}
+
+.card-img-top {
+    position: relative; 
+}
+
+.music-img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+    border-top-left-radius: .5rem; 
+    border-top-right-radius: .5rem; 
+}
+
+.card-border-top{
+    border-top:3px solid var(--color-first) ;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#progress-bar{
+    width: 100%;
+}
+.music-img{
+    height: 400px;
+    width: 400px;
+}
+.music-info h3,
+.music-info p{
+    text-align: center;
+}
+.music-icons{
+    display: flex;
+    justify-content: center;
+}
+.music-icons i{
+    color: #155263;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.nonactive-button{
+    display:none!important;
+}
+.active-song{
+    background-color: var(--color-first)!important;
+    color: #fff;
+    border: none;
+    border-radius: .2rem;
+}
+.pointer-none{
+    pointer-events: none;
+}
+
+@media (max-width: 767px) {
+    .music-img {
+        width: 100%; 
+        height: auto; 
+    }
+}
